@@ -23,15 +23,19 @@ export const StatisticsItem = styled.li`
   &:nth-of-type(1) {
     color: ${props => props.theme.colors.buttonGood};
   }
+
   &:nth-of-type(2) {
     color: ${props => props.theme.colors.buttonNeutral};
   }
+
   &:nth-of-type(3) {
     color: ${props => props.theme.colors.buttonBad};
   }
+
   &:nth-of-type(4) {
     color: ${props => props.theme.colors.redColor};
   }
+
   &:nth-of-type(5) {
     color: ${props => props.theme.colors.mainColor};
   }
