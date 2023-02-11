@@ -26,10 +26,9 @@ class App extends Component {
       ? Math.floor((this.state.good * 100) / this.countTotalFeedback())
       : 0;
 
-  onLeaveFeedback = evt => {
-    const name = evt.target.name;
+  onLeaveFeedback = option => {
     this.setState(prevState => ({
-      [name]: prevState[name] + 1,
+      [option]: prevState[option] + 1,
     }));
   };
 

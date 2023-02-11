@@ -29,16 +29,18 @@ export const FeedbackBtn = styled.button`
     font-size: ${props => props.theme.fontSizes.hover};
   }
 
-  &:nth-of-type(1):hover,
-  &:nth-of-type(1):focus {
+  &.good:hover,
+  &.good:focus {
     background-color: ${props => props.theme.colors.buttonGood};
   }
-  &:nth-of-type(2):hover,
-  &:nth-of-type(2):focus {
+
+  &.neutral:hover,
+  &.neutral:focus {
     background-color: ${props => props.theme.colors.buttonNeutral};
   }
-  &:nth-of-type(3):hover,
-  &:nth-of-type(3):focus {
+
+  &.bad:hover,
+  &.bad:focus {
     background-color: ${props => props.theme.colors.buttonBad};
   }
 `;
