@@ -22,19 +22,34 @@ const App = () => {
     countPositiveFeedbackPercentage();
   });
 
-  const onLeaveFeedback = name => {
-    switch (name) {
-      case 'good':
-        setGood(state => state + 1);
-        return;
-      case 'neutral':
-        setNeutral(state => state + 1);
-        return;
-      case 'bad':
-        setBad(state => state + 1);
-        return;
-      default:
-        return;
+  // const onLeaveFeedback = option => {
+  //   switch (option) {
+  //     case 'good':
+  //       setGood(prevState => prevState + 1);
+  //       return;
+  //     case 'neutral':
+  //       setNeutral(prevState => prevState + 1);
+  //       return;
+  //     case 'bad':
+  //       setBad(prevState => prevState + 1);
+  //       return;
+  //     default:
+  //       return;
+  //   }
+  // };
+
+  const onLeaveFeedback = option => {
+    if (option === 'good') {
+      setGood(prevState => prevState + 1);
+      return;
+    }
+    if (option === 'neutral') {
+      setNeutral(prevState => prevState + 1);
+      return;
+    }
+    if (option === 'bad') {
+      setBad(prevState => prevState + 1);
+      return;
     }
   };
 
